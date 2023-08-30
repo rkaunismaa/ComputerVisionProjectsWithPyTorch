@@ -20,3 +20,11 @@ git config user.name 'your username'
 4:03pm Skimmed through the first chapter. They try to hammer through a lot of details regarding convolutions in a CNN.  Gonna continue on with Chapter 2.
 
 Need to pull down the data from this [Chest X-ray Images](https://www.kaggle.com/datasets/tolgadincer/labeled-chest-xray-images) Kaggle competition ...
+
+The book code uses torchsummary to display information about the model, but that code base has been deprectated with torchinfo, so I am going to ...
+
+pip install torchinfo
+
+... and use that instead.
+
+7:12pm The ImageClassification.ipynb all works. Nice! ... Resume at page 69, 'The Second Variation of the Model' tomorrow ... 
