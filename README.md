@@ -28,3 +28,10 @@ pip install torchinfo
 ... and use that instead.
 
 7:12pm The ImageClassification.ipynb all works. Nice! ... Resume at page 69, 'The Second Variation of the Model' tomorrow ... 
+
+## Thursday, August 31, 2023
+
+10:43am Continuing from page 69. Running the same notebook as above but with changes to JUST the transformations on the training data.
+
+11:35am I was running the notebook that ran yesterday on docker hfpt_July21 and it kept crashing. A Reboot solved the crashing problem. 
+
