@@ -35,3 +35,9 @@ pip install torchinfo
 
 11:35am I was running the notebook that ran yesterday on docker hfpt_July21 and it kept crashing. A Reboot solved the crashing problem. 
 
+## Friday, September 1, 2023
+
+4:00pm That failing notebook (Chapter_02/cv_reg_batch_aug_2.ipynb) was because it was running out of computer ram. Increasing the swapfile from 2gb to 32gb and reducing the number of epochs from 15 to 12 allowed the notebook to run without errors. And this was running under the new docker container created off of the 'docker pull huggingface/transformers-pytorch-gpu' image I pulled down on Wednesday. 
+
+So keep this in mind! Always pay attention to cpu memory and gpu memory when you run a notebook.
+
