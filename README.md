@@ -41,3 +41,10 @@ pip install torchinfo
 
 So keep this in mind! Always pay attention to cpu memory and gpu memory when you run a notebook.
 
+## Sunday, September 3, 2023
+
+6:25pm Continuing with chapter 3 "Building an Object Detection Model"
+
+6:37pm Looks like we need to download assets from the [OpenCv repo](https://github.com/opencv/opencv/tree/master/data/haarcascades) but the names are different from what is shown in the book. I am going to pull down what I think are the assets with the most similar names from the book and give them a go ... sigh ... the assets are already part of the repo for this book! ... 
+
+7:13pm hmm I can't access my video camera using opencv in the first notebook of chapter 3 ... gonna pass and move on.
