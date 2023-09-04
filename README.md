@@ -48,3 +48,13 @@ So keep this in mind! Always pay attention to cpu memory and gpu memory when you
 6:37pm Looks like we need to download assets from the [OpenCv repo](https://github.com/opencv/opencv/tree/master/data/haarcascades) but the names are different from what is shown in the book. I am going to pull down what I think are the assets with the most similar names from the book and give them a go ... sigh ... the assets are already part of the repo for this book! ... 
 
 7:13pm hmm I can't access my video camera using opencv in the first notebook of chapter 3 ... gonna pass and move on.
+
+## Monday, September 4, 2023
+
+2:39pm Continuing with chapter 3 ... Hmm the book uses Yolo V3 but a quick search reveals there is now a YOLO V7! Gotta wonder about the value of attempting to use V3 when we have V7!
+
+2:47pm Hah! Nope! There is a [YOLO V8](https://pypi.org/project/ultralytics/) At this point I wonder if I should just mess with V8 ... 
+
+2:54pm Ultralytics offers a [docker image](https://hub.docker.com/r/ultralytics/ultralytics) Yeah, what the hell, let's pull er down and see what we get!
+
+4:30pm Damn ... its a 12.8gb docker image! Gonna give er a spin later ...
