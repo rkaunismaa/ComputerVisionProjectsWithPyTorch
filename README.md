@@ -58,3 +58,11 @@ So keep this in mind! Always pay attention to cpu memory and gpu memory when you
 2:54pm Ultralytics offers a [docker image](https://hub.docker.com/r/ultralytics/ultralytics) Yeah, what the hell, let's pull er down and see what we get!
 
 4:30pm Damn ... its a 12.8gb docker image! Gonna give er a spin later ...
+
+## Tuesday, September 5, 2023
+
+1:09pm Yeah, grinding through chapter 3 ... 
+
+2:31pm Actually, gonna take [facenet-pytorch](https://github.com/timesler/facenet-pytorch) for a spin ... and yeah, will just add it here, cuz why not?
+
+3:30pm Damn ... pip install mmcv ... gets stuck at Building wheel for mmcv (setup.py) ... gonna let er run and see if it actually concludes ... In the mean time, gonna get started with 'An Introduction to Statistical Learning with Applications in Python' ...
