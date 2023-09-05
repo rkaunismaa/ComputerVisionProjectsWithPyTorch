@@ -4,5 +4,8 @@ Chapter_03/.ipynb_checkpoints/
 
 FaceNetPyTorch/data/
 FaceNetPyTorch/*.mp4
+FaceNetPyTorch/runs/
+
+
 
 
