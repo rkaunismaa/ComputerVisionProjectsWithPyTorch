@@ -83,3 +83,14 @@ docker run --rm -p 8888:8888 -v <local path>:/home/jovyan/ timesler/jupyter-dl-g
 ... which of course needs to change to ... 
 
 docker run --rm -p 8888:8888 -v /home/rob/Data/Documents/Github/rkaunismaa/ComputerVisionProjectsWithPytorch:/home/jovyan/ timesler/jupyter-dl-gpu:latest jupyter lab
+
+2:38pm OK ... so I ran that image with ...
+
+docker run --name fn_pt --gpus all -it --user 0 -v /home/rob/Data/Documents/Github/rkaunismaa:/home/jovyan/ --env HF_DATASETS_CACHE=/home/rob/Data2/huggingface/datasets --env TRANSFORMERS_CACHE=/home/rob/Data2/huggingface/transformers -p 8888:8888 timesler/jupyter-dl-gpu:latest bash
+
+... and then once I had the bash prompt, I ran ...
+
+jupyter lab --notebook-dir=/home/jovyan --ip 0.0.0.0 --no-browser --allow-root
+
+AND that one notebook that was not working in the hfpt_Sept1 container DID run! ... yeah, pytorch was at 1.3.1 ... so no wonders why it failed
+
