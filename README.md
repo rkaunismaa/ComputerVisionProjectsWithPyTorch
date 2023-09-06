@@ -73,4 +73,13 @@ So keep this in mind! Always pay attention to cpu memory and gpu memory when you
 
 ## Wednesday, September 6, 2023
 
-9:54am Continuing to try to get FaceNetPyTorch/lfw_evaluate.ipynb to run ... 
+9:54am Continuing to try to get FaceNetPyTorch/lfw_evaluate.ipynb to run ...  
+
+12:51pm OK ...  gonna step away from dicking with the facenet-pytorch code in my own docker image hfpt_Sept1 and pull down the docker image the author of the code has created ... https://github.com/timesler/docker-jupyter-dl-gpu
+
+Jupyter Lab
+docker run --rm -p 8888:8888 -v <local path>:/home/jovyan/ timesler/jupyter-dl-gpu:latest jupyter lab
+
+... which of course needs to change to ... 
+
+docker run --rm -p 8888:8888 -v /home/rob/Data/Documents/Github/rkaunismaa/ComputerVisionProjectsWithPytorch:/home/jovyan/ timesler/jupyter-dl-gpu:latest jupyter lab
