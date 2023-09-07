@@ -96,7 +96,10 @@ AND that one notebook that was not working in the hfpt_Sept1 container DID run! 
 
 ## Thursday, September 7, 2023
 
-1:49pm Been reading up on vector databases and have concluded what I want to try is [DeepImageSearch](https://pypi.org/project/DeepImageSearch/). This project builds on top of [Faiss](https://faiss.ai/) which was developed by FaceBook. Gonna install this to the hfpt_Sept1 container and give er a go ... And yeah, this again deviates from the original intent of this repo, but meh ... 
+1:49pm Been reading up on vector databases and have concluded what I want to try is [DeepImageSearch](https://pypi.org/project/DeepImageSearch/). This project builds on top of [Facebook AI Similarity Search](https://faiss.ai/). Gonna install this to the hfpt_Sept1 container and give er a go ... And yeah, this again deviates from the original intent of this repo, but meh ... 
 
 Right ... DeepImageSearch is NOT a vector database, but "DeepImageSearch is a powerful Python library that combines state-of-the-art computer vision models for feature extraction with highly optimized algorithms for indexing and searching." ... I MAY look into trying a vector database such as [chroma](https://www.trychroma.com/) or [milvus](https://milvus.io/) after I get a better understanding on how to do image similarity search with DeepImageSearch. 
 
+4:41 OK ... Ran all the MyMatch images through DeepImageSearch, asked it to find similar images, and it appeared to work! It is still not using the GPU even though I loaded faiss-gpu to the container ... meh for now.
+
+4:49pm It looks like [this](https://github.com/facebookresearch/faiss/wiki/Getting-started) resource could be good for digging into faiss. I think the next thing to try is to JUST use faiss and not DeepImageSearch in a notebook. I really want to see if I can get the gpu engaged!
