@@ -94,3 +94,9 @@ jupyter lab --notebook-dir=/home/jovyan --ip 0.0.0.0 --no-browser --allow-root
 
 AND that one notebook that was not working in the hfpt_Sept1 container DID run! ... yeah, pytorch was at 1.3.1 ... so no wonders why it failed
 
+## Thursday, September 7, 2023
+
+1:49pm Been reading up on vector databases and have concluded what I want to try is [DeepImageSearch](https://pypi.org/project/DeepImageSearch/). This project builds on top of [Faiss](https://faiss.ai/) which was developed by FaceBook. Gonna install this to the hfpt_Sept1 container and give er a go ... And yeah, this again deviates from the original intent of this repo, but meh ... 
+
+Right ... DeepImageSearch is NOT a vector database, but "DeepImageSearch is a powerful Python library that combines state-of-the-art computer vision models for feature extraction with highly optimized algorithms for indexing and searching." ... I MAY look into trying a vector database such as [chroma](https://www.trychroma.com/) or [milvus](https://milvus.io/) after I get a better understanding on how to do image similarity search with DeepImageSearch. 
+
