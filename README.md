@@ -102,4 +102,14 @@ Right ... DeepImageSearch is NOT a vector database, but "DeepImageSearch is a po
 
 4:41 OK ... Ran all the MyMatch images through DeepImageSearch, asked it to find similar images, and it appeared to work! It is still not using the GPU even though I loaded faiss-gpu to the container ... meh for now.
 
-4:49pm It looks like [this](https://github.com/facebookresearch/faiss/wiki/Getting-started) resource could be good for digging into faiss. I think the next thing to try is to JUST use faiss and not DeepImageSearch in a notebook. I really want to see if I can get the gpu engaged!
+4:49pm It looks like [Faiss Getting Started](https://github.com/facebookresearch/faiss/wiki/Getting-started) resource could be good for digging into faiss. I think the next thing to try is to JUST use faiss and not DeepImageSearch in a notebook. I really want to see if I can get the gpu engaged!
+
+## Friday, September 8, 2023
+
+8:56am DeepImageSearch is just one python file of 278 lines of code. A Load_Data class and a Search_Setup class. Simple stuff! It looks like a good resource to study to understand how to work with faiss.. 
+
+9:33am Again, stuff on [DeepFace](https://pypi.org/project/deepface/) keeps coming up. Yeah. Gonna give this a go today.
+
+9:37am Right. DeepFace uses TensorFlow. So if I want to play with this, then I need to switch to a docker image with tensorflow. ugh ... wow, I have no tensorflow containers to begin with. Well then, let's run 'docker pull tensorflow/tensorflow:latest-gpu-jupyter' shall we ... 
+
+9:44am Hmm DeepFace was created by Facebook in 2014 but today uses tensorflow ... ?
