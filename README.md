@@ -113,3 +113,11 @@ Right ... DeepImageSearch is NOT a vector database, but "DeepImageSearch is a po
 9:37am Right. DeepFace uses TensorFlow. So if I want to play with this, then I need to switch to a docker image with tensorflow. ugh ... wow, I have no tensorflow containers to begin with. Well then, let's run 'docker pull tensorflow/tensorflow:latest-gpu-jupyter' shall we ... 
 
 9:44am Hmm DeepFace was created by Facebook in 2014 but today uses tensorflow ... ?
+
+2:01pm Now running from the docker container tfgpu-213 which contains the gpu version of tensorflow 2.13. I ran 'pip install deepface' on this container, and will now attempt to do some stuff with DeepFace.
+
+4:08pm Ran DeepFace find on the MyMatch images and just like DeepImageSearch, it generated a representations file (facial embeddings actually) at ...
+
+/tf/All/Data/Documents/Github/rkaunismaa/NLP4HTML/express/express-match/public/images/representations_vgg_face.pkl
+
+... and if you add more images to this folder, then you need to re-run this method. I am now seeing the value of storing this stuff in a database. 
