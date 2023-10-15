@@ -121,3 +121,14 @@ Right ... DeepImageSearch is NOT a vector database, but "DeepImageSearch is a po
 /tf/All/Data/Documents/Github/rkaunismaa/NLP4HTML/express/express-match/public/images/representations_vgg_face.pkl
 
 ... and if you add more images to this folder, then you need to re-run this method. I am now seeing the value of storing this stuff in a database. 
+
+## Sunday, October 15, 2023
+
+4:49pm Today, I had to fix a broken docker with [Installing the NVIDIA Container toolkit](https://docs.nvidia.com/datacenter/cloud-native/container-toolkit/latest/install-guide.html#install-guide) cuz my tfgpu-213 container was not spinning up.
+
+5:57pm Regenerated ...
+/tf/All/Data/Documents/Github/rkaunismaa/NLP4HTML/express/express-match/public/images/representations_vgg_face.pkl (301.2)
+
+... and created ...
+
+/tf/All/Data/Documents/Github/rkaunismaa/NLP4HTML/express/express-match/public/images/representations_facenet512.pkl (60.3mb)
